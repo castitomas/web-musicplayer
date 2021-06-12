@@ -144,6 +144,46 @@
     transition: width 0.1s linear;
   }
 
+/* Volume Slider */
+
+.slider-container {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 rgba(10, 218, 218, 0.6);
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+}
+
+.slider-container i {
+  padding: 10px;
+  color: #cdc2d0;
+}
+
+/* Appearance of the slider thumb*/
+.slider-container input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #cdc2d0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+ /*Appaarance of the slider*/
+
+ .slider-container input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  margin-top: 15px;
+  background: #037e7e;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+ }
 
 
 /*title*/

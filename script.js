@@ -11,6 +11,8 @@ const cover = document.getElementById('cover');
 const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
+const volumeSlider = document.querySelector('.volume-slider')
+
 // Song titles
 const songs = ['Colours', 'Leaves', 'Divine', 'Fresh', 'Amnesia', 'Ramen'];
 
@@ -149,6 +151,12 @@ function DurTime (e) {
 	durTime.innerHTML = min_d +':'+ sec_d;
 		
 };
+
+// Volume Slider
+
+function setVolume() {
+	audio.volume = volumeSlider.value / 100;
+  }
 
 // Event listeners
 playBtn.addEventListener('click', () => {
